@@ -100,8 +100,8 @@ class HiwonderRobot:
             [theta_radians[0], self.l1, 0,         np.pi/2],
             [theta_radians[1], 0,        self.l2,  0      ],
             [theta_radians[2], 0,        self.l3,  0      ],
-            [theta_radians[3], 0,        0,        np.pi/2],
-            [theta_radians[4], self.l5,  0,        0      ]
+            [theta_radians[3]-np.pi/2, 0,        0,        -np.pi/2],
+            [theta_radians[4], self.l5+self.l4,  0,        0      ]
         ]
 
         T_cumulative = np.eye(4)
